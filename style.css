@@ -29,6 +29,7 @@ body{
 
 .hex-colors h2{
   margin-top: 15%;
+  text-transform: lowercase;
 }
 
 @-ms-keyframes colorchange{
