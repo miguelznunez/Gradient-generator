@@ -1,141 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
-
-body{font-family: 'Comfortaa', cursive;}
-
-.container{
-  width: 95%;
-  margin: auto;
+body {
+  height: 100vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-}
-
-#hex-colors{
-  width: 100%;
+  flex-direction: column;
   text-align: center;
+  color: white;
+  background-color: black;
 }
 
-#hex-colors h1, h2{
-  font-size: 2rem;
-  text-transform: uppercase;
-  -ms-animation: colorchange 5s infinite alternate;
-  -moz-animation: colorchange 5s infinite alternate;
-  -o-animation: colorchange 5s infinite alternate; 
-  animation: colorchange 5s infinite alternate; 
+h1 {
+  text-shadow: 1px 1px 2px black;
 }
 
-#hex-colors h2{
-  margin-top: 15%;
-  text-transform: lowercase;
+button {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px black;
+  box-shadow: 1px 1px 2px black;
+  transition: 0.3s ease;
 }
 
-@-ms-keyframes colorchange{
-  0% {
-        color: #ffffff;
-      }
-      
-      20% {
-        color: #cccccc;
-      }
-      
-      40% {
-        color: #999999;
-      }
-      
-      60% {
-        color: #666666;
-      }
-      
-      80% {
-        color: #333333;
-      }
-      
-      100% {
-        color: #000000;
-      } 
-}
-
-@-moz-keyframes colorchange{
-    0% {
-        color: #ffffff;
-      }
-      
-      20% {
-        color: #cccccc;
-      }
-      
-      40% {
-        color: #999999;
-      }
-      
-      60% {
-        color: #666666;
-      }
-      
-      80% {
-        color: #333333;
-      }
-      
-      100% {
-        color: #000000;
-      } 
-}
-
-@-o-keyframes colorchange{
-    0% {
-        color: #ffffff;
-      }
-      
-      20% {
-        color: #cccccc;
-      }
-      
-      40% {
-        color: #999999;
-      }
-      
-      60% {
-        color: #666666;
-      }
-      
-      80% {
-        color: #333333;
-      }
-      
-      100% {
-        color: #000000;
-      }  
-}
-
-@keyframes colorchange {
-    0% {
-        color: #ffffff;
-      }
-      
-      20% {
-        color: #cccccc;
-      }
-      
-      40% {
-        color: #999999;
-      }
-      
-      60% {
-        color: #666666;
-      }
-      
-      80% {
-        color: #333333;
-      }
-      
-      100% {
-        color: #ffffff;
-      }  
-}
-
-@media(max-width:480px){
-  #hex-colors h1{font-size: 1.5rem;}
-  
-  #hex-colors h2{font-size: 1.5rem;}
+button:hover {
+  transform: scale(1.1);
 }
